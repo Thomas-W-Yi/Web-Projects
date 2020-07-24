@@ -1,0 +1,90 @@
+body{
+  background:#c1d1e1;
+  background-image:url(https://i.pinimg.com/originals/07/67/ce/0767ced1fb5c3a3b148598a179d9fdf5.jpg)
+
+}
+
+header{
+  background:#979abe;
+  text-align:center;
+  margin:auto;
+  padding:auto;
+  width:60%;
+  opacity:80%;
+
+}
+
+form{
+  width:auto;
+  margin: auto;
+  padding: 5px;
+}
+
+.flex-container{
+  background: #979abe;
+  color: white;
+  text-align: left;
+  display: flex;
+  margin: auto;
+  padding: auto;
+  width: 60%;
+  opacity:80%;
+  flex-direction:column;
+}
+
+div p{
+  margin:10px;
+  padding:auto;
+  text-align:left;
+}
+
+h1, h2{
+  color: black;
+  text-align: center;
+}
+
+#name{
+  width: 30%;
+}
+
+#email{
+  width: 30%;
+}
+
+#number{
+  width:30%;
+
+}
+
+ul li {
+  display: inline-block;
+  padding: 12px;
+  font-size: 18px;
+  transition: 0.2s;
+  margin:20px;
+}
+
+li:hover{
+  color:#1DB954;
+}
+
+select{
+  width: 20%;
+  display: flex;
+  margin: 20px;
+  padding:auto;
+}
+
+textarea{
+  width:80%;
+  margin:auto;
+  padding:auto;
+
+}
+
+#submit{
+  width:5%;
+  margin:auto;
+  paddig:auto;
+
+}
