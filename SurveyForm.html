@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="survey.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time in participating</p>
+    </header>
+    <form id="survey-form" >
+    <div class="flex-container">
+        <ul>
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" name="Enter your name" placeholder="please enter your first and last name" rules="required">
+        </ul>
+
+        <ul>
+          <label id="email-label" for="email">Email </label>
+          <input id="email" type="email" name="Enter your Email" placeholder="please enter your email" rules="required|email|max:255">
+        </ul>
+
+        <ul>
+          <label id="number-label" for="number">Number </label>
+          <input id="number" type="number" name="number" placeholder="please enter your number" rules="required" min="1" max="10">
+        </ul>
+    </div>
+    <br>
+
+    <div class="flex-container">
+    <p> Which option best describes your current role</p>
+        <ul style="list-style: none">
+         <select id="dropdown" name="dropdown">
+            <option value="student">student</option>
+            <option value="Fulltime job">Fulltime job</option>
+            <option value="Fulltime leaner">Fulltime leaner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+         </ul>
+      </div>
+      <br>
+
+    <div class="flex-container">
+    <p> would you recommend this to your friends</p>
+        <ul style="list-style: none">
+            <label for="Definitely"><input type="radio" id="Definitely" name="choice" value="Definitely">Definitely</label>
+        </ul>
+        <ul style="list-style: none">
+            <label for="Maybe"><input type="radio" id="Maybe" name="choice" value="Maybe">Maybe</label>
+        </ul>
+        <ul style="list-style: none">
+            <label for="Not sure"><input type="radio" id="Not sure" name="choice" value="Not sure">Not sure</label>
+        </ul>
+
+    </div>
+    <br>
+
+    <div class="flex-container">
+        <p> what would you like to see improved</p>
+        <ul style="list-style: none">
+          <li>
+            <label for="Front-end Projects"> <input type="checkbox" id="Front-end Projects" name="Front-end Projects" value="Front-end">Front-end Projects</label>
+          </li>
+          <li>
+            <label for="back-end Projects"><input type="checkbox" id="back-end Projects" name="back-end Projects" value="Back-end"> back-end Projects</label>
+          </li>
+          <li>
+            <label for="Data Visualization"><input type="checkbox" id="Data Visualization" name="Data Visualization" value="Data"> Data Visualization</label>
+          </li>
+        </ul>
+
+    </div>
+    <br>
+
+    <div class="flex-container">
+          <h2>Any comments or suggestions</h2>
+          <textarea id="comments" class="input-field" name="comments" placeholder="Enter your commnents here..." ows="8" cols="80"></textarea>
+          <input id="submit" type="submit" name="submit" value="submit">
+    </div>
+    <br>
+    </form>
+    </body>
+</html>
